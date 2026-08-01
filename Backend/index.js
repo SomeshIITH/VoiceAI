@@ -4,9 +4,11 @@ import morgan from 'morgan';
 import {PORT} from './config/server-config.js';
 import router from './routers/routes.js';
 import connectDB from './config/db-config.js';
+import cookieParser from 'cookie-parser';
 
 const app = express();
 app.use(express.json());
+app.use(cookieParser());
 app.use(morgan('dev'));
 app.use('/',router);
 
