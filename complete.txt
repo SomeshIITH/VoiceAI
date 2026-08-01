@@ -1,0 +1,4 @@
+
+setup tailwindcss for vite
+
+npm i react-router-dom react-icons
